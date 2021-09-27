@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>오전 오후 판별기</title>
+</head>
+<body>
+    <script>
+        const nowtime = new Date(); // Sat Sep 25 2021 01:07:50 GMT+0900 (한국 표준시)
+        const hour = nowtime.getHours(); // 1
+        
+        if (hour < 12) //12시 이전은 오전
+        {
+            alert(`현재 시각은 ${hour}시 오전입니다.`);
+        }
+
+        if (hour >= 12)  //12시 또는 12시 이후는 오후
+        {
+            alert(`현재 시각은 ${hour}시 오후입니다.`);
+        }
+
+        location.href="../index.html"; //index 화면으로 되돌아감
+    </script>
+</body>
+</html>
