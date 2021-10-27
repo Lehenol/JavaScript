@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>최솟값 구하는 함수 만들기</title>
+</head>
+<body>
+    <script>
+        function min(arr) {
+            let result = arr[0];
+            for (const item of arr) {
+                if (result > item) {
+                    result = item;
+                }
+            }
+            return result;
+        }
+
+        const testArray = prompt('숫자 배열을 입력해주세요.','').split(' ').map(Number);
+        alert(`${testArray} 중에서\n최솟값 = ${min(testArray)}`);
+        
+        location.href="../index.html"
+    </script>
+    <a href="../index.html">Back</a>
+</body>
+</html>

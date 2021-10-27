@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function isLeapYear(year) {
+            return (year % 4 === 0) && (year % 100 !== 0) || (year % 400 === 0);
+        }
+
+        x = Number(prompt('연도를 입력해주세요.',''));
+        isLeapYear(x) ? alert("윤년입니다.") : alert("윤년이 아닙니다.");
+
+        location.href="../index.html"
+    </script>
+    <a href="../index.html">Back</a>
+</body>
+</html>

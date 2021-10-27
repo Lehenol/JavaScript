@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>A부터 B까지 더하는 함수 만들기</title>
+</head>
+<body>
+    <script>
+        let a = Number(prompt('A를 입력해주세요.',''));
+        let b = Number(prompt('B를 입력해주세요.',''));
+
+        function plus(x, y) {
+            let result = 0;
+            for (let i = (x > y ? y : x); i <= (x > y ? x : y); i++) {
+                result += i;
+            }
+            return result;
+        }
+
+        alert(plus(a,b));
+
+        location.href="../index.html"
+    </script>
+    <a href="../index.html">Back</a>
+</body>
+</html>

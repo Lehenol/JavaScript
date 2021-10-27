@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        const max = function max(...array) {
+            let output = array[0];
+            for (const items of array) {
+                if (output < items) {
+                    output = items;
+                }
+            }
+            return output;
+        }
+
+        alert(max(1,2,3,4));
+
+        location.href="../index.html"
+    </script>
+    <a href="../index.html">Back</a>
+</body>
+</html>
